@@ -1,0 +1,35 @@
+ <!--container com titulo-->
+ <div class="container border mt-2 p-2" id="container1" >
+    <div class="row border mt-3 p-1" id="linha1"> 
+       
+      <img [src]="'assets/imgEscola/iconMatematica2.png'" width="200" height="130"  class="col-2"> 
+        
+        
+        <div class="col-1 my-1 "><h1 class="display-5">Escola Metodo</h1></div>
+        <div class="col-1 offset-2 row align-items-end  menu-item"><h6>INICIO</h6></div>
+        <div (mouseenter)="showSubList('lista-cursos')" (mouseleave)="hideSubList('lista-cursos')" class="col-1 offset-1 row align-items-end menu-item">
+          <h6>CURSOS</h6>
+          <div id="lista-cursos" class="lista">
+            <div class="triangulo-para-baixo "></div>
+            <div class="lista-item"><a href="#">Algebra</a></div>
+            <div class="lista-item"><a href="#">Geometria</a></div>
+            <div class="lista-item"><a href="#">Calculo</a></div>
+            <div class="lista-item"><a href="#">Logaritmo</a></div>
+          </div>
+        </div>
+        <div (mouseenter)="showSubList('lista-professores')" (mouseleave)="hideSubList('lista-professores')" class="col-1 offset-1 row align-items-end order-5 menu-item">
+          <h6>PROFESSORES</h6>
+          
+          <div id="lista-professores" class="lista">
+            <div class="triangulo-para-baixo "></div>
+            <div class="lista-item"><a href="#">Joao almeida</a></div>
+            <div class="lista-item"><a href="#">Guilherme</a></div>
+            <div class="lista-item"><a href="#">Santiago Drumond</a></div>
+            <div class="lista-item"><a href="#">Peterson</a></div>
+          </div>
+        </div>
+
+        <div class="col-1 offset-1 row align-items-end order-5 menu-item"><h6>CONTATOS</h6></div>
+        
+        </div>
+      </div>
